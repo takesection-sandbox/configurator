@@ -19,10 +19,12 @@ export class Wifi extends PayloadContent {
     ProxyType: string = "None";
     SSID_STR: string = "";
     constructor(
+        description: string,
         ssid: string,
         password: string
     ) {
         super();
+        this.PayloadDescription = description;
         this.SSID_STR = ssid;
         this.Password = password;
     }
